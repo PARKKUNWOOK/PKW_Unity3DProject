@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Effect\PlayerEffectController.cs" />
     <Compile Include="Assets\Scripts\ColliderTriggers\MeleeWeaponTrigger.cs" />
     <Compile Include="Assets\Scripts\UI\ItemQuickSlotManager.cs" />
+    <Compile Include="Assets\Scripts\Map\FadeController.cs" />
     <Compile Include="Assets\Scripts\UI\SkillIcon.cs" />
     <Compile Include="Assets\Scripts\Actions\PlayerAction\KnightBlock.cs" />
     <Compile Include="Assets\Scripts\Manager\MinotaursManager.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\Characters\PlayerKnight.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Map\MapPortal.cs" />
     <Compile Include="Assets\Scripts\UI\SkillLevelButton.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\UI\DraggableItem.cs" />

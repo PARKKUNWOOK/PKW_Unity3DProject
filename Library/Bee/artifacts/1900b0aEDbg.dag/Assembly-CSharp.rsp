@@ -450,6 +450,8 @@
 "Assets/Scripts/Manager/GameManager.cs"
 "Assets/Scripts/Manager/MinotaursManager.cs"
 "Assets/Scripts/Manager/PlayerSkillDataManager.cs"
+"Assets/Scripts/Map/FadeController.cs"
+"Assets/Scripts/Map/MapPortal.cs"
 "Assets/Scripts/UI/DamageTextController.cs"
 "Assets/Scripts/UI/DamageTextManager.cs"
 "Assets/Scripts/UI/DraggableItem.cs"

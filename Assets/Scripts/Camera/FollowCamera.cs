@@ -34,4 +34,12 @@ public class FollowCamera : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, _destPos, _moveDamping * Time.deltaTime);
     }
+
+    public void SetPlayerCamPos(GameObject player)
+    {
+        _target = player.transform;
+        _targetPos = _target.position;
+        _destPos = _targetPos + Vector3.back * _distance + Vector3.up * _height;
+        transform.position = _destPos;
+    }
 }
