@@ -22,6 +22,7 @@ public class KnightAttack : MonoBehaviour
 
     private void Update()
     {
+        if (!PlayerKnight.Instance.CanControl) return;
         if (IsAttacking)
             return;
 

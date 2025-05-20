@@ -25,6 +25,7 @@ public class KnightBlock : MonoBehaviour
 
     private void Update()
     {
+        if (!PlayerKnight.Instance.CanControl) return;
         if (PlayerKnight.Instance.IsDead)
             return;
 

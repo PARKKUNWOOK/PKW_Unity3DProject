@@ -15,12 +15,12 @@ public class FadeController : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void FadeOutAndMove(System.Action onBlack)
+    public void FadeOutAndMove(System.Action onBlack, System.Action onFadeInComplete = null)
     {
-        StartCoroutine(FadeOutCoroutine(onBlack));
+        StartCoroutine(FadeOutCoroutine(onBlack, onFadeInComplete));
     }
 
-    private IEnumerator FadeOutCoroutine(System.Action onBlack)
+    private IEnumerator FadeOutCoroutine(System.Action onBlack, System.Action onFadeInComplete)
     {
         float alpha = 0f;
         while (alpha < 1f)
@@ -34,10 +34,10 @@ public class FadeController : MonoBehaviour
         onBlack?.Invoke();
 
         yield return new WaitForSeconds(0.3f);
-        StartCoroutine(FadeInCoroutine());
+        StartCoroutine(FadeInCoroutine(onFadeInComplete));
     }
 
-    private IEnumerator FadeInCoroutine()
+    private IEnumerator FadeInCoroutine(System.Action onFadeInComplete)
     {
         float alpha = 1f;
         while (alpha > 0f)
@@ -48,6 +48,7 @@ public class FadeController : MonoBehaviour
         }
 
         SetAlpha(0f);
+        onFadeInComplete?.Invoke();
     }
 
     private void SetAlpha(float alpha)

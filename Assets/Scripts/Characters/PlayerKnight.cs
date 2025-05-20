@@ -56,6 +56,9 @@ public class PlayerKnight : MonoBehaviour
     public bool IsGettingHit => _isGettingHit;
     public bool IsDead { get; private set; } = false;
 
+    private bool _canControl = true;
+    public bool CanControl => _canControl;
+
     private void Awake()
     {
         _instance = this;
@@ -118,6 +121,14 @@ public class PlayerKnight : MonoBehaviour
         }
 
         HandleBuffTimer();
+    }
+
+    public void SetControlEnabled(bool value)
+    {
+        _canControl = value;
+
+        if (_animator != null)
+            _animator.enabled = value;
     }
 
     private void GainExp(float amount)
