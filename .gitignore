@@ -1,0 +1,93 @@
+# ========== Unity 기본 무시 항목 ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# ========== Unity 생성 파일 ==========
+sysinfo.txt
+*.pidb
+*.booproj
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Addressables (packed data)
+Assets/AddressableAssetsData/*/*.bin*
+
+# StreamingAssets (Addressables-related 임시 파일)
+Assets/StreamingAssets/aa.meta
+Assets/StreamingAssets/aa/*
+
+# ========== 빌드 결과물 ==========
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ========== IDE 설정 파일 ==========
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.sln.*
+*.suo
+*.tmp
+*.user
+*.userprefs
+
+.idea/
+Assets/Plugins/Editor/JetBrains*
+.vscode/
+
+.gradle/
+ExportedObj/
+.consulo/
+
+# ========== macOS 시스템 파일 ==========
+.DS_Store
+
+# ========== Unity Hub 이상한 경로 혹시 대비 ==========
+Unity3D_Team1_Pofol/Library
+
+# ========== Firebase build and deployment files ==========
+/firebase-debug.log
+/firebase-debug.*.log
+.firebaserc
+
+# Firebase Hosting
+/firebase.json
+*.cache
+hosting/.cache
+
+# Firebase Functions
+/functions/node_modules/
+/functions/.env
+/functions/package-lock.json
+
+# Firebase Emulators
+/firebase-*.zip
+/.firebase/
+emulator-ui/
+
+# ========== 공통 로그, 환경 파일 ==========
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.*
